@@ -1,5 +1,16 @@
-# ファイル共有用リポジトリ
-失敗するかもしれんけど．．．　　
-種類別にブランチ切る方法をやってみる
+# 機械学習環境構築
+## 構成
+### image
+ - nvidia/cuda:10.0-cudnn7-devel
+ - ubuntu:18.04  
+ GPUマシンであるならばnvidia/cudaのほうが楽
 
-- docker
+### python バージョン
+#### python3
+  - 3.7.3
+#### python2
+  - 2.7.16
+### pythonバージョン管理
+- pyenv
+### pythonライブラリ管理
+- pip
