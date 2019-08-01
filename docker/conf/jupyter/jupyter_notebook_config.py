@@ -2,7 +2,7 @@ c = get_config()
 c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.open_browser = False
 c.NotebookApp.port = 8080
-c.NotebookApp.password = 'sha1:0b6fd4cb5497:e19da667ed0e8e2832ee4b51d5d1939195c8675e'
+c.NotebookApp.token = ''
 c.NotebookApp.notebook_dir = '/root/'
 c.NotebookApp.allow_root = True
 
