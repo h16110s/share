@@ -3,7 +3,7 @@ c.NotebookApp.ip = '0.0.0.0'
 c.NotebookApp.open_browser = False
 c.NotebookApp.port = 8080
 c.NotebookApp.token = ''
-c.NotebookApp.notebook_dir = '/root/'
+c.NotebookApp.notebook_dir = '/root/Drive/'
 c.NotebookApp.allow_root = True
 
 # Configuration file for jupyter-notebook.
