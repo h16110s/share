@@ -12,9 +12,19 @@ sudo sed -i 's/enabled=1/enabled=0/g' /etc/default/apport
 sudo apt purge -y snapd
 sudo apt install -y snapd
 
+echo "いらないものアンインストール"
+sudo apt -y remove --purge gnome-sudoku
+sudo apt -y remove --purge gnome-mines
+sudo apt -y remove --purge gnome-mahjongg
+sudo apt -y remove --purge aisleriot 
+sudo apt -y remove --purge gnome-todo 
+sudo apt -y remove --purge ubuntu-web-launchers
 
 echo "Gnome-Tweak-Toolのインストール"
 sudo apt -y install gnome-shell gnome-tweak-tool
+
+echo "ex-fatマウント用のパッケージインストール"
+sudo apt -y install exfat-fuse exfat-utils 
 
 echo "テーマ系のインストール"
 sudo add-apt-repository ppa:numix/ppa
@@ -27,10 +37,6 @@ sudo apt -y update
 sudo apt -y install materia-gtk-theme
 sudo apt-get -y upgrade
 
-echo "vimのインストール" 
-sudo apt-get -y install vim
-mkdir $HOME/.vim
-cp $HOME/.vim vim/*
 
 echo "コンパイル系のインストール" 
 sudo apt -y install build-essential
@@ -48,20 +54,25 @@ sudo apt -y install \
         libffi-dev \
         libdb-dev
 
-
-echo "ex-fatマウント用のパッケージインストール"
-sudo apt -y install exfat-fuse exfat-utils 
+echo "ネットワーク系のやつ"
+sudo apt -y install net-tools
 
 echo "google chromeのインストール"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb 
 
+
+echo "vimのインストール" 
+sudo apt-get -y install vim
+mkdir $HOME/.vim
+cp $HOME/.vim vim/*
 
 echo "Gitのインストール"
 sudo apt -y install git
 mkdir $HOME/gir
 
-echo "VLCのインストール"
-sudo snap install vlc
-
-
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y autoremove
+sudo apt clean
 echo "Done!!!"
