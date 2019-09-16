@@ -57,11 +57,6 @@ sudo apt -y install \
 echo "ネットワーク系のやつ"
 sudo apt -y install net-tools
 
-echo "google chromeのインストール"
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb 
-
-
 echo "vimのインストール" 
 sudo apt-get -y install vim
 mkdir $HOME/.vim
@@ -70,6 +65,16 @@ cp $HOME/.vim vim/*
 echo "Gitのインストール"
 sudo apt -y install git
 mkdir $HOME/gir
+
+echo "ツールのインストール"
+sudo apt -y install \
+        wget \
+        curl \
+        samba        
+        
+echo "google chromeのインストール"
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb 
 
 sudo apt -y update
 sudo apt -y upgrade
