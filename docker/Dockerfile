@@ -68,6 +68,7 @@ RUN python -m pip install --upgrade pip  && \
     pip install sklearn && \
     pip install tqdm && \
     pip install jupyterthemes && \
+    pip install jupyterlab && \
     jt -t oceans16 -f inconsolata -N -T 
 
 COPY ./conf/jupyter ${HOME}/.jupyter
