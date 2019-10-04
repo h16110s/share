@@ -74,4 +74,4 @@ RUN python -m pip install --upgrade pip  && \
 COPY ./conf/jupyter ${HOME}/.jupyter
 
 WORKDIR ${HOME}
-ENTRYPOINT [ "/bin/bash", "--login" ]
+# ENTRYPOINT [ "/bin/bash", "--login" ]
