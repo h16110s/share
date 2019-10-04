@@ -69,6 +69,8 @@ RUN python -m pip install --upgrade pip  && \
     pip install tqdm && \
     pip install jupyterthemes && \
     pip install jupyterlab && \
+    pip install chainer && \
+    pip install cupy
     jt -t oceans16 -f inconsolata -N -T 
 
 COPY ./conf/jupyter ${HOME}/.jupyter
