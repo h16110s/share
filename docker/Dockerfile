@@ -21,6 +21,7 @@ RUN apt -y update  && \
         libffi-dev \
         libdb-dev \ 
         libopencv-dev \
+        cmake \ 
         wget \
         curl \
         git \ 
@@ -67,6 +68,7 @@ RUN python -m pip install --upgrade pip  && \
     pip install opencv-python && \
     pip install sklearn && \
     pip install tqdm && \
+    pip install dlib && \
     pip install jupyterthemes && \
     pip install jupyterlab && \
     pip install chainer && \
