@@ -26,18 +26,6 @@ sudo apt -y install gnome-shell gnome-tweak-tool
 echo "ex-fatマウント用のパッケージインストール"
 sudo apt -y install exfat-fuse exfat-utils 
 
-echo "テーマ系のインストール"
-sudo add-apt-repository ppa:numix/ppa
-sudo apt -y update
-sudo apt -y install numix-icon-theme-circle
-sudo apt -y upgrade
-
-sudo add-apt-repository ppa:dyatlov-igor/materia-theme
-sudo apt -y update
-sudo apt -y install materia-gtk-theme
-sudo apt-get -y upgrade
-
-
 echo "コンパイル系のインストール" 
 sudo apt -y install build-essential
 sudo apt -y install \
