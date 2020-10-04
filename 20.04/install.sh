@@ -73,4 +73,9 @@ sudo apt -y update
 sudo apt -y upgrade
 sudo apt -y autoremove
 sudo apt clean
+
+# ランレベル変更する場合
+# sudo systemctl set-default multi-user.target
+# sudo systemctl set-default graphical.target
+
 echo "Done!!!"
